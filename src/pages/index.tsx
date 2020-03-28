@@ -26,7 +26,7 @@ const IndexPage: React.FC<{}> = () => (
     <p>
       {`Go to this repository on `}
       <a
-        href="https://github.com/artamonovtech/gatsby-typescript-starter-default"
+        href="https://github.com/artamonovtech/gatsby-typescript-starter"
         target={`_blank`}
       >{`GitHub`}</a>
       .
