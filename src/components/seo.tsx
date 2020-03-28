@@ -46,7 +46,11 @@ export const Seo: React.FC<Props> = ({
 
   return (
     <Helmet
-      htmlAttributes={lang}
+      htmlAttributes={{
+        lang,
+      }}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -81,8 +85,6 @@ export const Seo: React.FC<Props> = ({
           content: metaDescription,
         },
       ].concat(meta)}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
     />
   )
 }
