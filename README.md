@@ -8,11 +8,11 @@
   Gatsby's TypeScript starter
 </h1>
 
-## рџ§ђ About
+## 🧐 About
 
 This is a simple starter app converted to [TypeScript](https://www.typescriptlang.org) based from [the Gatsby default starter](https://github.com/gatsbyjs/gatsby-starter-default). View [live demo](https://gatsby-typescript-starter-demo.netlify.com).
 
-## рџљЂ Quick start
+## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
@@ -39,7 +39,7 @@ This is a simple starter app converted to [TypeScript](https://www.typescriptlan
 
     Open the `gatsby-typescript-starter` directory in your code editor of choice and edit `src/pages/index.tsx`. Save your changes and the browser will update in real time!
 
-## рџ’ј Quick Info
+## 💼 Quick Info
 
 Here's some hot facts about this project:
 
@@ -49,7 +49,7 @@ Here's some hot facts about this project:
 
 3. This project includes a TypeScript prettier config.
 
-## рџ’« Deploy
+## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/artamonovtech/gatsby-typescript-starter)
 
