@@ -19,6 +19,7 @@ interface Props {
   description?: string
   lang?: HtmlProps | any
   meta?: MetaProps[] | any
+  keywords?: string[] | any
   title: string
 }
 
@@ -26,6 +27,7 @@ export const Seo: React.FC<Props> = ({
   description,
   lang,
   meta,
+  keywords,
   title,
 }: Props) => {
   const { site } = useStaticQuery(
@@ -35,7 +37,9 @@ export const Seo: React.FC<Props> = ({
           siteMetadata {
             title
             description
-            author
+            social {
+              twitter
+            }
           }
         }
       }
@@ -43,6 +47,7 @@ export const Seo: React.FC<Props> = ({
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaKeywords = keywords?.length > 0 ? keywords.join(`, `) : ``
 
   return (
     <Helmet
@@ -55,6 +60,10 @@ export const Seo: React.FC<Props> = ({
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `keywords`,
+          content: metaKeywords,
         },
         {
           property: `og:title`,
@@ -93,4 +102,5 @@ Seo.defaultProps = {
   description: ``,
   lang: `en`,
   meta: [],
+  keywords: [],
 }
