@@ -31,15 +31,13 @@ export const Seo: React.FC<Props> = ({
   title,
 }: Props) => {
   const { site } = useStaticQuery(
-    graphql`
+      graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            social {
-              twitter
-            }
+            author
           }
         }
       }
