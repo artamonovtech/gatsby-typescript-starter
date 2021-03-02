@@ -23,7 +23,7 @@ interface Props {
   title: string
 }
 
-export const Seo: React.FC<Props> = ({
+export const SEO: React.FC<Props> = ({
   description,
   lang,
   meta,
@@ -31,7 +31,7 @@ export const Seo: React.FC<Props> = ({
   title,
 }: Props) => {
   const { site } = useStaticQuery(
-      graphql`
+    graphql`
       query {
         site {
           siteMetadata {
@@ -96,7 +96,7 @@ export const Seo: React.FC<Props> = ({
   )
 }
 
-Seo.defaultProps = {
+SEO.defaultProps = {
   description: ``,
   lang: `en`,
   meta: [],

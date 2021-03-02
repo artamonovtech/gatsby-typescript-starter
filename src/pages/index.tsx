@@ -1,45 +1,28 @@
 import React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-import { Image } from "../components/image"
 import { Layout } from "../components/layout"
-import { Seo } from "../components/seo"
+import { SEO } from "../components/seo"
 
 const IndexPage: React.FC<{}> = () => (
   <Layout>
-    <Seo title="Home" />
+    <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <StaticImage
+      src="../images/gatsby-astronaut.png"
+      width={300}
+      quality={95}
+      formats={["auto", "webp", "avif"]}
+      alt="A Gatsby astronaut"
+      style={{ marginBottom: `1.45rem` }}
+    />
     <p>
-      This is a simple starter app converted to {` `}
-      <a href="https://www.typescriptlang.org" target="_blank">
-        TypeScript
-      </a>
-      {` `} based from {` `}
-      <a
-        href="https://github.com/gatsbyjs/gatsby-starter-default"
-        target="_blank"
-      >
-        the Gatsby default starter
-      </a>
-      .
+      <Link to="/page-2/">Go to page 2</Link> <br />
+      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
-    <p>
-      Go to this repository on {` `}
-      <a
-        href="https://github.com/artamonovtech/gatsby-typescript-starter"
-        target="_blank"
-      >
-        GitHub
-      </a>
-      .
-    </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
