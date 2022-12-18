@@ -1,14 +1,14 @@
 {
   "name": "gatsby-starter-default",
+  "version": "0.1.0",
+  "license": "0BSD",
   "private": true,
+  "author": "Alexander Artamonov",
   "description": "A simple starter to get up and developing quickly with Gatsby with TypeScript",
   "keywords": [
     "gatsby",
     "typescript"
   ],
-  "license": "0BSD",
-  "version": "0.1.0",
-  "author": "Alexander Artamonov <artamonov.tech@gmail.com>",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
