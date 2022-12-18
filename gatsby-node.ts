@@ -8,6 +8,6 @@ export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
     path: "/using-dsg",
     component: path.resolve("src/templates/using-dsg.tsx"),
     context: {},
-    defer: true
+    defer: true,
   })
 }
